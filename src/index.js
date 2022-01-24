@@ -1,3 +1,7 @@
+//use: can I use to see if css objects are supported and in which browsers
+
+import "./styles/index.scss";
+
 const elvenShieldRecipe = {
     leatherStrips: 2,
     ironIngot: 1,
