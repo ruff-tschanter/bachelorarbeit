@@ -1,18 +1,7 @@
 //use: can I use to see if css objects are supported and in which browsers
+import{render} from "react-dom";
+import App from "./components/App";
 
-import "./styles/index.scss";
 
-const elvenShieldRecipe = {
-    leatherStrips: 2,
-    ironIngot: 1,
-    refinedMoonstone: 4,
-};
+render(<App />, document.getElementById("root"));
 
-const elvenGauntletsRecipe = {
-    ...elvenShieldRecipe,
-    leather: 1,
-    refinedMoonstone: 4,
-};
-
-console.log(elvenShieldRecipe);
-console.log(elvenGauntletsRecipe)

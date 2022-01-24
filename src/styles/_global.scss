@@ -3,7 +3,7 @@
 body{
     margin: 0;
     background-color: variables.$bg;
-    color: #fff;
+    color: var(--text);
 }
 
 main {
