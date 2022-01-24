@@ -11,7 +11,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.s?css$/i, // the i stands for case insensitiveness,
+                test: /\.(s[ac]|c)ss$/i, // the i stands for case insensitiveness, (s[ac]|c)ss$ is supporting sass, scss and css
                 use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader", "sass-loader"],
             },
             {
