@@ -1,2 +1,7 @@
+//Bootstrap integration
+@use "../../node_modules/bootstrap/dist/css/bootstrap-grid.min.css";
+@use "../../node_modules/bootstrap/dist/css/bootstrap-utilities.min.css";
+
+
 @use "global";
 @use "hero";

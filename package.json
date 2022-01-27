@@ -27,7 +27,15 @@
     "webpack-dev-server": "^4.7.3"
   },
   "dependencies": {
+    "@popperjs/core": "^2.11.2",
+    "autoprefixer": "^10.4.2",
+    "core.js": "^0.4.2",
+    "jquery": "^3.6.0",
+    "node-sass": "^7.0.1",
+    "popper.js": "^1.16.1",
+    "raw-loader": "^4.0.2",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "twig-html-loader": "^0.1.9"
   }
 }
