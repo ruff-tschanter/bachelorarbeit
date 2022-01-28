@@ -1,0 +1,9 @@
+@use "variables";
+
+h1 {
+    color: white;
+}
+
+.text-field{
+    color: variables.$field;
+}

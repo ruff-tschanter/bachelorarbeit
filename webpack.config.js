@@ -2,6 +2,7 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const {CleanWebpackPlugin} = require("clean-webpack-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");("clean-webpack-plugin");
 
 
 let mode = "development";
@@ -58,7 +59,13 @@ module.exports = {
         new MiniCssExtractPlugin(), 
         new HtmlWebpackPlugin({
             template: "./src/index.html",
-        })
+            inject: 'body'
+        }),
+        new CopyWebpackPlugin({
+            patterns: [
+              { from: "./src/templates", to: "pages" },
+            ],
+        }),
     ],
 
     resolve: {

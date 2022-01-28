@@ -14,15 +14,9 @@ $cyan:    #0dcaf0 !default;
 // scss-docs-start theme-color-variables
 $primary:       $green !default;
 $secondary:     black !default;
+$field:         $red !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
 // scss-docs-end theme-color-variables
-
-
-
-:root{
-    --text: #fff;
-}
-$bg: peachpuff;
