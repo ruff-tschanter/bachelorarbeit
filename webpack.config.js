@@ -61,10 +61,10 @@ module.exports = {
             template: "./src/index.html",
             inject: 'body'
         }),
-        new CopyWebpackPlugin({
-            patterns: [
-              { from: "./src/templates", to: "pages" },
-            ],
+        new HtmlWebpackPlugin({
+            template: __dirname + '/src/templates/settings.html',
+            filename: "./pages/settings.html",
+            inject: 'body'
         }),
     ],
 
