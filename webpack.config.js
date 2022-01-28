@@ -42,17 +42,22 @@ module.exports = {
                     loader: "babel-loader",
                 },
             },
+            {
+                test: /\.html$/,
+                use: [
+                  {
+                    loader: 'html-loader'
+                  }
+                ]
+              },
         ],
     },
 
     plugins: [
-        new CleanWebpackPlugin(), 
+        //new CleanWebpackPlugin(), 
         new MiniCssExtractPlugin(), 
         new HtmlWebpackPlugin({
             template: "./src/index.html",
-            devServer: {
-                writeToDisk: true,
-            }
         })
     ],
 
