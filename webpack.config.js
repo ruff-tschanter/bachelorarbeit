@@ -8,6 +8,15 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");("clean-webpack-plugin"
 let mode = "development";
 let target = "web";
 
+let htmlPageNames = ['settings', 'map', 'moisture', 'weather'];
+let multipleHtmlPlugins = htmlPageNames.map(name => {
+  return new HtmlWebpackPlugin({
+    template: `./src/templates/${name}.html`, // relative path to the HTML files
+    filename: `./pages/${name}.html`, // output HTML files
+    inject: 'body'
+  })
+});
+
 if (process.env.NODE_ENV === "production"){
     mode = "production";
 }
@@ -61,12 +70,7 @@ module.exports = {
             template: "./src/index.html",
             inject: 'body'
         }),
-        new HtmlWebpackPlugin({
-            template: __dirname + '/src/templates/settings.html',
-            filename: "./pages/settings.html",
-            inject: 'body'
-        }),
-    ],
+    ].concat(multipleHtmlPlugins),
 
     resolve: {
         extensions: [".js", ".jsx"]
