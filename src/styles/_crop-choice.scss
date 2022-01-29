@@ -1,0 +1,33 @@
+@use 'variables';
+
+.left-arrow{
+    rotate: 180deg;
+}
+.crop-box{
+    width: 30%;
+    &:hover {
+        cursor: pointer;
+        img {
+            -webkit-filter: grayscale(0);
+            filter: none;
+        }
+    }
+    & img {
+        margin-bottom: -60px;
+        width: 100%;
+        display: block;
+        filter: gray; /* IE6-9 */
+        -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+        filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+        &:hover {
+            -webkit-filter: grayscale(0);
+            filter: none;
+            cursor: pointer;
+          }
+    }
+    & p {
+        margin-top: 55px;
+        font-size: 25px;
+        color: variables.$primary;
+    }
+}

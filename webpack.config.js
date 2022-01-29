@@ -8,7 +8,7 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");("clean-webpack-plugin"
 let mode = "development";
 let target = "web";
 
-let htmlPageNames = ['settings', 'map', 'moisture', 'weather'];
+let htmlPageNames = ['map', 'moisture', 'weather'];
 let multipleHtmlPlugins = htmlPageNames.map(name => {
   return new HtmlWebpackPlugin({
     template: `./src/templates/${name}.html`, // relative path to the HTML files
