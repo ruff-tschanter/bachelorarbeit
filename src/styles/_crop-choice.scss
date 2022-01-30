@@ -31,3 +31,10 @@
         color: variables.$primary;
     }
 }
+
+@media (max-width: 768px) {
+    .crop-box{
+        width: 75%;
+        margin-bottom: 20px;
+    }
+}

@@ -4,34 +4,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soil moisture screen</title>
+    <title>Bachelorarbeit</title>
 </head>
 <body>
-    <div class="bg-black">
-    
-        <div class="container navigation">
-            <div class="row py-2 d-flex align-items-center">
-                <div class="col-3 d-flex align-items-center">
-                    <div class="w-100 border-end border-white">
-                        <a href="../pages/map.html"><img src="../images/pin.svg" class="px-half"/></a>
-                    </div>
-                    <div class="w-100 border-end border-white">
-                        <a href="../pages/moisture.html"><img src="../images/waterdrop.svg" class="px-half"/></a>
-                    </div>
-                    <div class="w-100">
-                        <a href="../pages/weather.html"> <img src="../images/sun.svg" class="px-half sun"/></a>
+
+    <navigation></navigation>
+
+    <div class="container mt-5">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-1 d-flex justify-content-center">
+                <img src="../images/arrow-yellow.svg" class="w-50 left-arrow"/>
+            </div>
+            <div class="col-10">
+                <div class="row">
+                    <div class="col-12 d-md-flex justify-content-between align-items-end">
+                        <div class="crop-box" data-bs-toggle="modal" data-bs-target="#placeSensor">
+                            <img src="../images/rice.svg" class="w-100">
+                            <div class="bg-white border rounded w-100">
+                                <p class="p-4">Rice</p>
+                            </div>
+                        </div>
+                        <div class="crop-box">
+                            <img src="../images/sugarcane.svg" class="w-100">
+                            <div class="bg-white border rounded w-100">
+                                <p class="p-4">Sugarcane</p>
+                            </div>
+                        </div>
+                        <div class="crop-box">
+                            <img src="../images/wheat.svg" class="w-100">
+                            <div class="bg-white border rounded w-100">
+                                <p class="p-4">Wheat</p>
+                            </div>
+                        </div>
+        
                     </div>
                 </div>
-                <div class="col-7">
-                    <h1>Choose your crops for field 1 <span class="text-field">(F1)</span></h1>
+                <div class="row mt-3">
+                    <div class="col-12 d-md-flex justify-content-between align-items-end">
+                        <div class="crop-box">
+                            <img src="../images/rice.svg" class="w-100">
+                            <div class="bg-white border rounded w-100">
+                                <p class="p-4">Rice</p>
+                            </div>
+                        </div>
+                        <div class="crop-box">
+                            <img src="../images/sugarcane.svg" class="w-100">
+                            <div class="bg-white border rounded w-100">
+                                <p class="p-4">Sugarcane</p>
+                            </div>
+                        </div>
+                        <div class="crop-box">
+                            <img src="../images/wheat.svg" class="w-100">
+                            <div class="bg-white border rounded w-100">
+                                <p class="p-4">Wheat</p>
+                            </div>
+                        </div>
+        
+                    </div>
                 </div>
-                <div class="col-1 d-flex">
-                    <div class="w-100">
-                        <a href="../index.html"><img src="../images/settings.svg" class="px-half settings"/></a>
-                    </div>              
-                </div>
+            </div>
+            <div class="col-1 d-flex justify-content-center">
+                <img src="../images/arrow-yellow.svg" class="w-50"/>
             </div>
         </div>
     </div>
+
+    <placeSensorModal></placeSensorModal>
+
+    <div style="position:fixed;bottom:0;left:0;background:rgba(0,0,0,0.8);color:white;padding:2px;border:1px solid white;">
+        <div class="d-block d-sm-none">XS</div>
+        <div class="d-none d-sm-block d-md-none">SM ≥576px</div>
+        <div class="d-none d-md-block d-lg-none">MD ≥768px</div>
+        <div class="d-none d-lg-block d-xl-none">LG ≥992px</div> 
+        <div class="d-none d-xl-block d-xxl-none">XL ≥1200px</div>
+        <div class="d-none d-xxl-block">XXL ≥1400px</div>
+    </div>
+
+      
 </body>
+
 </html>

@@ -2,20 +2,43 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const {CleanWebpackPlugin} = require("clean-webpack-plugin");
-const CopyWebpackPlugin = require("copy-webpack-plugin");("clean-webpack-plugin");
+const HtmlWebpackPartialsPlugin = require('html-webpack-partials-plugin');
+const CopyPlugin = require("copy-webpack-plugin");
+
 
 
 let mode = "development";
 let target = "web";
 
+/* MULTIPLE html pages */
 let htmlPageNames = ['map', 'moisture', 'weather'];
 let multipleHtmlPlugins = htmlPageNames.map(name => {
   return new HtmlWebpackPlugin({
     template: `./src/templates/${name}.html`, // relative path to the HTML files
-    filename: `./pages/${name}.html`, // output HTML files
+    filename: `./pages/${name}.html`, // output HTML files,
     inject: 'body'
   })
 });
+
+/* MULTIPLE MODALS */
+let modalNames = ['placeSensorModal'];
+let multipleModalHtmlPlugins = modalNames.map(name => {
+  return new HtmlWebpackPartialsPlugin({
+    path: `./src/modals/${name}.html`, // relative path to the HTML files
+    location: `${name}`, 
+  })
+});
+
+
+/* MULTIPLE PARTIALS */
+let partialNames = ['navigation'];
+let multiplePartialsHtmlPlugins = partialNames.map(name => {
+  return new HtmlWebpackPartialsPlugin({
+    path: `./src/partials/${name}.html`, // relative path to the HTML files
+    location: `${name}`, 
+  })
+});
+
 
 if (process.env.NODE_ENV === "production"){
     mode = "production";
@@ -32,6 +55,12 @@ module.exports = {
 
     module: {
         rules: [
+          {
+            test: /\.html$/,
+            use: {
+              loader: 'html-loader',
+            }
+          },
             {
                 test: /\.(png|jpe?g|gif|svg)$/i, // the i stands for case insensitiveness, (s[ac]|c)ss$ is supporting sass, scss and css
                 type: "asset", //decides by filesizes over 8KB wether it should be inline js - rest will be a seperate output file, "asset/resource" only has original size output files, "asset/inline" sets images to inline javascript
@@ -52,14 +81,6 @@ module.exports = {
                     loader: "babel-loader",
                 },
             },
-            {
-                test: /\.html$/,
-                use: [
-                  {
-                    loader: 'html-loader'
-                  }
-                ]
-              },
         ],
     },
 
@@ -70,7 +91,12 @@ module.exports = {
             template: "./src/index.html",
             inject: 'body'
         }),
-    ].concat(multipleHtmlPlugins),
+        new CopyPlugin({
+          patterns: [
+            { from: "./src/images", to: "images" },
+          ],
+        }),
+    ].concat(multipleHtmlPlugins, multipleModalHtmlPlugins, multiplePartialsHtmlPlugins),
 
     resolve: {
         extensions: [".js", ".jsx"]
