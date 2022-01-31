@@ -9,3 +9,13 @@
         border-color: variables.$primary;    
     }
 }
+
+.btn-secondary{
+    background-color: variables.$red;
+    border-color: variables.$red;
+    width: 40%;
+    &:hover, &:focus, &:active{
+        background-color: variables.$red;
+        border-color: variables.$red;    
+    }
+}

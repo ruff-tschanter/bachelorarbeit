@@ -4,10 +4,16 @@ h1 {
     color: white;
 }
 
-.text-field{
-    color: variables.$field;
-}
 
 p {
     margin: 0;
+    font-size: 20px;
+}
+
+.primary{
+    color: variables.$primary;
+}
+
+.font-weight-bold{
+    font-weight: bold;
 }

@@ -1,19 +1,35 @@
-<div class="modal fade" id="placeSensor" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">         
-        <button type="button" class="btn-close position-absolute top-0 end-0 p-2" data-bs-dismiss="modal" aria-label="Close"></button>
+<div class="modal fade" id="placeSensor" data-bs-backdrop="static" aria-hidden="true" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title mx-auto" id="staticBackdropLabel">Place sensors on <span class="red">F1</span></h5>
         </div>
         <div class="modal-body">
           <div class="container d-flex">
-              <img src="../images/sensorpod.svg" class="w-50"/>
-              <img src="../images/arrow-red.svg" class="red-arrow px-5"/>
-              <img src="../images/field.svg" class="w-100"/>
+              <img src="../images/modal/sensorpod.svg" class="w-50"/>
+              <img src="../images/arrow/arrow-red.svg" class="red-arrow px-5"/>
+              <img src="../images/modal/field.svg" class="w-100"/>
             </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary mx-auto" data-bs-dismiss="modal">OK</button>
+          <button type="button" class="btn btn-primary mx-auto" data-bs-target="#addAnotherField" data-bs-toggle="modal" data-bs-dismiss="modal">&#10003;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!--SECOND MODAL-->
+  <div class="modal fade" id="addAnotherField" data-bs-backdrop="static" aria-hidden="true" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title mx-auto" id="staticBackdropLabel">Add another field?</h5>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary mx-auto" data-bs-dismiss="modal">&#10003;</button>
+
+          <a href="../pages/map.html" class="w-40 mx-auto"><button class="btn btn-secondary w-100" data-bs-dismiss="modal">X</button></a>
         </div>
       </div>
     </div>
