@@ -12,9 +12,13 @@ main {
 }
 
 ul{
-    list-style-image: url("../images/arrow-red.svg"); 
+    list-style-image: url("../images/arrow/arrow-red.svg"); 
  }
- 
+
 .red{
     color: variables.$red;
+}
+
+.w-40{
+    width:40%;
 }
