@@ -11,8 +11,10 @@ main {
     align-items: center;
 }
 
-
-
 ul{
-   list-style-image: url("../images/arrow-red.svg"); 
+    list-style-image: url("../images/arrow-red.svg"); 
+ }
+ 
+.red{
+    color: variables.$red;
 }

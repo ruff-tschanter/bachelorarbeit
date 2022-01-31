@@ -1,0 +1,11 @@
+@use "variables";
+
+.btn-primary{
+    background-color: variables.$light-green;
+    border-color: variables.$light-green;
+    width: 40%;
+    &:hover, &:focus, &:active{
+        background-color: variables.$primary;
+        border-color: variables.$primary;    
+    }
+}

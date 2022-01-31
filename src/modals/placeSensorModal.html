@@ -1,16 +1,19 @@
 <div class="modal fade" id="placeSensor" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
-      <div class="modal-content">
+      <div class="modal-content">         
+        <button type="button" class="btn-close position-absolute top-0 end-0 p-2" data-bs-dismiss="modal" aria-label="Close"></button>
         <div class="modal-header">
-          <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <h5 class="modal-title mx-auto" id="staticBackdropLabel">Place sensors on <span class="red">F1</span></h5>
         </div>
         <div class="modal-body">
-          ...
+          <div class="container d-flex">
+              <img src="../images/sensorpod.svg" class="w-50"/>
+              <img src="../images/arrow-red.svg" class="red-arrow px-5"/>
+              <img src="../images/field.svg" class="w-100"/>
+            </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Understood</button>
+          <button type="button" class="btn btn-primary mx-auto" data-bs-dismiss="modal">OK</button>
         </div>
       </div>
     </div>
