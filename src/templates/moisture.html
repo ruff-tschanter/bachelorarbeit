@@ -8,63 +8,67 @@
 </head>
 <body>
 
-    <navigation></navigation>
+    <div class="bg-black">
+    
+        <div class="container navigation">
+            <div class="row py-3 d-flex align-items-center">
+                <div class="col-2 col-md-3 d-md-flex align-items-center">
+                    <div class="w-100 border-end border-white py-1 py-md-0 inactive">
+                        <a href="../pages/map.html"><img src="../images/pin.svg" class="px-half"/></a>
+                    </div>
+                    <div class="w-100 border-end border-white py-1 py-md-0">
+                        <a href="../pages/moisture.html"><img src="../images/waterdrop.svg" class="px-half"/></a>
+                    </div>
+                    <div class="w-100 py-1 py-md-0 inactive">
+                        <a href="../pages/weather.html"> <img src="../images/sun.svg" class="px-half sun"/></a>
+                    </div>
+                </div>
+                <div class="col-8 col-md-7">
+                    <h1>Choose your crops for field 1 <span class="red">(F1)</span></h1>
+                </div>
+                <div class="col-2 col-md-1">
+                    <div class="w-100">
+                        <a href="/"><img src="../images/settings.svg" class="px-half settings"/></a>
+                    </div>              
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <div class="container mt-5">
-        <div class="row align-items-center justify-content-center">
-            <div class="col-1 d-flex justify-content-center">
-                <img src="../images/arrow/arrow-yellow.svg" class="w-50 left-arrow"/>
-            </div>
-            <div class="col-10">
-                <div class="row">
-                    <div class="col-12 d-md-flex justify-content-between align-items-end">
-                        <div class="crop-box" data-bs-toggle="modal" data-bs-target="#placeSensor">
-                            <img src="../images/crop-choice/rice.svg" class="w-100">
-                            <div class="bg-white border rounded w-100">
-                                <p class="p-4">Rice</p>
-                            </div>
-                        </div>
-                        <div class="crop-box">
-                            <img src="../images/crop-choice/sugarcane.svg" class="w-100">
-                            <div class="bg-white border rounded w-100">
-                                <p class="p-4">Sugarcane</p>
-                            </div>
-                        </div>
-                        <div class="crop-box">
-                            <img src="../images/crop-choice/wheat.svg" class="w-100">
-                            <div class="bg-white border rounded w-100">
-                                <p class="p-4">Wheat</p>
-                            </div>
-                        </div>
-        
+    <div class="grass">
+        <img src="../images/moisture/grass.svg"/>
+    </div>
+
+    <div class=" moisture-container">
+        <div class="container h-100">
+            <div class="row align-items-center h-100">
+                <div class="col-md-4 col-12">
+                    <div class="map-direct-view rounded p-4">
+                        <img src="../images/moisture/map-direct-view.svg"/>
                     </div>
                 </div>
-                <div class="row mt-3">
-                    <div class="col-12 d-md-flex justify-content-between align-items-end">
-                        <div class="crop-box">
-                            <img src="../images/crop-choice/rice.svg" class="w-100">
-                            <div class="bg-white border rounded w-100">
-                                <p class="p-4">Rice</p>
+                <div class="col-md-8 col-12">
+                    <div class="container waterdrop-container px-0 mt-4">
+                        <div class="row">
+                            <div class="d-flex justify-content-around">
+                                <img src="../images/waterdrop.svg"/>
+                                <img src="../images/waterdrop.svg"/>
+                                <img src="../images/waterdrop.svg"/>
                             </div>
                         </div>
-                        <div class="crop-box">
-                            <img src="../images/crop-choice/sugarcane.svg" class="w-100">
-                            <div class="bg-white border rounded w-100">
-                                <p class="p-4">Sugarcane</p>
+                        <div class="row">
+                            <div class="d-flex justify-content-around">
+                                <img src="../images/waterdrop.svg"/>
+                                <img src="../images/waterdrop.svg"/>
                             </div>
                         </div>
-                        <div class="crop-box">
-                            <img src="../images/crop-choice/wheat.svg" class="w-100">
-                            <div class="bg-white border rounded w-100">
-                                <p class="p-4">Wheat</p>
+                        <div class="row">
+                            <div class="d-flex justify-content-around">
+                                <img src="../images/waterdrop.svg"/>
                             </div>
                         </div>
-        
                     </div>
                 </div>
-            </div>
-            <div class="col-1 d-flex justify-content-center">
-                <img src="../images/arrow/arrow-yellow.svg" class="w-50"/>
             </div>
         </div>
     </div>

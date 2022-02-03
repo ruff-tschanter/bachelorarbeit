@@ -1,4 +1,7 @@
 @use "variables";
+html, body {
+    height:100%;
+}
 
 body{
     margin: 0;
@@ -21,4 +24,14 @@ ul{
 
 .w-40{
     width:40%;
+}
+
+.inactive{    
+    & img {
+        width: 100%;
+        display: block;
+        filter: gray; /* IE6-9 */
+        -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+        filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+    }
 }

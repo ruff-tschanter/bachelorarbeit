@@ -1,0 +1,27 @@
+@use "variables";
+
+.moisture-container{
+    background-image: url("../images/moisture/soil.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 88vh;
+}
+
+.grass{
+    background-color: variables.$light-blue;
+    margin: 0 -15px -25px -15px;
+    width: 1950px;
+}
+
+.map-direct-view{
+    background-color: rgba(255,255,255,0.8);
+}
+
+.waterdrop-container{
+    & img {
+        width: 100px;
+    }
+    .row{
+        margin: 0 0 12% 0;
+    }
+}

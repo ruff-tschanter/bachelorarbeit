@@ -1,12 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Map</title>
+    <link rel="stylesheet" href="https://js.arcgis.com/3.39/dijit/themes/claro/claro.css">
+    <link rel="stylesheet" href="https://js.arcgis.com/3.39/esri/css/esri.css">
 </head>
+
 <body>
-    
+    <div class="sensor-overlay">
+        <div class="field1-markup-box">
+            <a href="../pages/moisture.html">
+                <p class="field1-markup">F1</p>
+            </a>
+        </div>
+        <div class="field2-markup-box">
+            <a href="../pages/moisture.html">
+                <p class="field1-markup">F2</p>
+            </a>
+        </div>
+    </div>
+    <div class="bg-black">
+
+        <div class="container navigation">
+            <div class="row py-3 d-flex align-items-center">
+                <div class="col-2 col-md-3 d-md-flex align-items-center">
+                    <div class="w-100 border-end border-white py-1 py-md-0">
+                        <a href="../pages/map.html"><img src="../images/pin.svg" class="px-half" /></a>
+                    </div>
+                    <div class="w-100 border-end border-white py-1 py-md-0 inactive">
+                        <a href="../pages/moisture.html"><img src="../images/waterdrop.svg" class="px-half" /></a>
+                    </div>
+                    <div class="w-100 py-1 py-md-0 inactive">
+                        <a href="../pages/weather.html"> <img src="../images/sun.svg" class="px-half sun" /></a>
+                    </div>
+                </div>
+                <div class="col-8 col-md-7">
+                    <h1>Choose your crops for field 1 <span class="red">(F1)</span></h1>
+                </div>
+                <div class="col-2 col-md-1">
+                    <div class="w-100">
+                        <a href="/"><img src="../images/settings.svg" class="px-half settings" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div data-dojo-type="dijit.layout.BorderContainer" data-dojo-props="design:'headline', gutters:false" class="map-window">
+
+    <div id="map" data-dojo-type="dijit.layout.ContentPane" data-dojo-props="region:'center'">
+    </div> -->
+
+    </div>
+    <img src="../images/map/topo-map.svg" />
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- <script>var dojoConfig = {parseOnLoad: true};</script>
+    <script src="https://js.arcgis.com/3.39/"></script>
+    <script>
+      dojo.require("dijit.layout.BorderContainer");
+      dojo.require("dijit.layout.ContentPane");
+      dojo.require("esri.map");
+
+      var map;
+
+      function init() {
+        map = new esri.Map("map", {
+          basemap: "topo-vector",
+          center: [71.995, 25.677],
+            zoom: 16
+        });
+      }
+      dojo.ready(init);
+    </script> -->
+
+
 </body>
+
 </html>
