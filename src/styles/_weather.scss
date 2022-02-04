@@ -1,3 +1,45 @@
-.weather-sun{
-    margin: -50px;
+.weather-sun-box{
+    height: 70%;
+    & img {
+        margin-bottom: -50px;
+        width: 30%;
+        position: relative;
+        z-index: 20;
+    }
+    .today-dislpay-box{
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.next-days{
+    .day {
+        width: 250px    
+    }
+    .weather-next-day{
+        .weather{
+            margin-top: -30px;
+            padding: 0 20px;
+            width: 90px;
+        }
+        .cloudy{
+            margin-top: -30px;
+            padding: 0 20px;
+            width: 100px;
+        }
+        img {
+            width: 40px;
+        }
+        .arrow{
+            width: 10px;
+        }
+        .watering, .rain{
+            width: 70px;    
+            margin-top: -20px;
+        }
+        .cistern{
+            width: 70px;    
+        }
+    }
 }

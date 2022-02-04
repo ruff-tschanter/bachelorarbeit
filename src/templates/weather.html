@@ -34,20 +34,139 @@
         </div>
     </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-6">
-                <div class="d-flex justify-content-center flex-column">
-                    <img src="../images/weather/weather-sun.svg" class="w-50 weather-sun"/>
-                    <p class="primary bg-white px-3 py-2 border rounded font-weight-bold">Tomorrow</p>
-
+    <div class="container h-100">
+        <div class="row align-items-center h-100 mt-5">
+            <div class="col-md-6 col-12 h-100">
+                <div class="d-flex justify-content-center flex-column weather-sun-box">
+                    <img src="../images/weather/weather-sun.svg" class="mx-auto"/>
+                    <div class="border rounded bg-white h-100">
+                        <h2 class="primary text-center pt-5 mt-5 pb-0 font-weight-bold">Today</h2>
+                        <div class="container px-5 today-dislpay-box">
+                            <div class="row align-items-center">
+                                <div class="col-4">
+                                    <img src="../images/weather/no-rain.svg"/>
+                                </div>
+                                <div class="col-2">
+                                    <img src="../images/arrow/arrow-yellow.svg" class="px-3"/>
+                                </div>
+                                <div class="col-6">
+                                    <img src="../images/weather/watering.svg">
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="primary mt-5 pt-5 text-center font-weight-bold">20 days no rain!</h3>
+                    </div>
+                    
                 </div>
             </div>
-            <div class="col-6">
-                <div class="container p-0">
+            <div class="col-md-6 col-12 h-100">
+                <div class="container next-days p-0">
+                    <!--Day 2-->
                     <div class="row">
                         <div class="col-12">
-                            <p class="primary bg-white px-3 py-2 border rounded font-weight-bold">Tomorrow</p>
+                            <div class="d-flex bg-white px-3 py-2 border rounded weather-next-day">
+                                <p class="primary font-weight-bold mt-1 day">Tomorrow</p>
+                                <img src="../images/weather/weather-sun.svg" class="weather"/>
+                                <div class="container w-100">
+                                    <div class="row">
+                                        <div class="col-5 text-center">
+                                            <img src="../images/weather/no-rain.svg" class=""/>
+                                        </div>
+                                        <div class="col-2 mt-1">
+                                            <img src="../images/arrow/arrow-yellow.svg" class="arrow"/>
+                                        </div>
+                                        <div class="col-4">
+                                            <img src="../images/weather/watering.svg" class="watering"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Day 3-->
+                    <div class="row mt-4">
+                        <div class="col-12">
+                            <div class="d-flex bg-white px-3 py-2 border rounded weather-next-day">
+                                <p class="primary font-weight-bold mt-1 day">Wednesday</p>
+                                <img src="../images/weather/sun-and-cloud.svg" class="cloudy"/>
+                                <div class="container w-100">
+                                    <div class="row">
+                                        <div class="col-5 text-center">
+                                            <img src="../images/weather/no-rain.svg" class=""/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Day 4-->
+                    <div class="row mt-4">
+                        <div class="col-12">
+                            <div class="d-flex bg-white px-3 py-2 border rounded weather-next-day">
+                                <p class="primary font-weight-bold mt-1 day">Thursday</p>
+                                <img src="../images/weather/weather-rain.svg" class="rain"/>
+                                <div class="container w-100">
+                                    <div class="row">
+                                        <div class="col-5 text-center">
+                                            <img src="../images/weather/rain.svg" class=""/>
+                                        </div>
+                                        <div class="col-2 mt-1">
+                                            <img src="../images/arrow/arrow-yellow.svg" class="arrow"/>
+                                        </div>
+                                        <div class="col-4">
+                                            <img src="../images/weather/watercistern.svg" class="cistern"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Day 5-->
+                    <div class="row mt-4">
+                        <div class="col-12">
+                            <div class="d-flex bg-white px-3 py-2 border rounded weather-next-day">
+                                <p class="primary font-weight-bold mt-1 day">Friday</p>
+                                <img src="../images/weather/sun-and-cloud.svg" class="cloudy"/>
+                                <div class="container w-100">
+                                    <div class="row">
+                                        <div class="col-5 text-center">
+                                            <img src="../images/weather/no-rain.svg" class=""/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Day 6-->
+                    <div class="row mt-4">
+                        <div class="col-12">
+                            <div class="d-flex bg-white px-3 py-2 border rounded weather-next-day">
+                                <p class="primary font-weight-bold mt-1 day">Saturday</p>
+                                <img src="../images/weather/sun-and-cloud.svg" class="cloudy"/>
+                                <div class="container w-100">
+                                    <div class="row">
+                                        <div class="col-5 text-center">
+                                            <img src="../images/weather/no-rain.svg" class=""/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Day 7-->
+                    <div class="row mt-4">
+                        <div class="col-12">
+                            <div class="d-flex bg-white px-3 py-2 border rounded weather-next-day">
+                                <p class="primary font-weight-bold mt-1 day">Sunday</p>
+                                <img src="../images/weather/sun-and-cloud.svg" class="cloudy"/>
+                                <div class="container w-100">
+                                    <div class="row">
+                                        <div class="col-5 text-center">
+                                            <img src="../images/weather/no-rain.svg" class=""/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
