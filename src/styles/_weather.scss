@@ -18,15 +18,21 @@
         width: 250px    
     }
     .weather-next-day{
+        .forecast {
+            width: 75px;
+        }
+        .rain-pred {
+            width: 45px;
+        }
         .weather{
-            margin-top: -30px;
+            margin-top: -25px;
             padding: 0 20px;
-            width: 90px;
+            width: 95px;
         }
         .cloudy{
-            margin-top: -30px;
+            margin-top: -25px;
             padding: 0 20px;
-            width: 100px;
+            width: 105px;
         }
         img {
             width: 40px;
@@ -35,8 +41,8 @@
             width: 10px;
         }
         .watering, .rain{
-            width: 70px;    
-            margin-top: -20px;
+            width: 75px;    
+            margin-top: -15px;
         }
         .cistern{
             width: 70px;    
