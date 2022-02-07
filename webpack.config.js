@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const {CleanWebpackPlugin} = require("clean-webpack-plugin");
 const HtmlWebpackPartialsPlugin = require('html-webpack-partials-plugin');
 const CopyPlugin = require("copy-webpack-plugin");
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 
 
@@ -45,13 +46,28 @@ if (process.env.NODE_ENV === "production"){
 }
 
 module.exports = {
+
     mode: mode, 
     target: target, 
 
+    entry: './src/index.js',
     output:{
         path: path.resolve(__dirname, "dist"), // get the absolute path to dirname dist by calling path.resolve on dirname dist
         assetModuleFilename: "images/[hash][ext][query]"
     },
+
+    optimization: {
+      minimizer: [new UglifyJsPlugin({
+          uglifyOptions: {
+              compress: {
+                  unused: false
+              },
+              mangle: {
+                  keep_fnames: true
+              }
+          }
+      })]
+  },
 
     module: {
         rules: [
@@ -89,7 +105,8 @@ module.exports = {
         new MiniCssExtractPlugin(), 
         new HtmlWebpackPlugin({
             template: "./src/index.html",
-            inject: 'body'
+            inject: 'body',
+            favicon: './src/images/sun.svg'
         }),
         new CopyPlugin({
           patterns: [

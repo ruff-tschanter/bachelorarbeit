@@ -2,6 +2,6 @@
 import{render} from "react-dom";
 import App from "./components/App";
 import bootstrap from "../node_modules/bootstrap";
+require("../src/js/contentChange")
 
 //render(<App />, document.getElementsByClassName("header"));
-
