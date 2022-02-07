@@ -1,0 +1,45 @@
+@use "variables";
+.axis {
+    position: absolute;
+    top: 0;
+    left: 0;
+    --c: 20;
+    --cx: 0;
+    --cy: 0;
+    --dsize: 15;
+    --dcolor: #f0f;
+    --size: 100%;
+    width: var(--size);
+    height: var(--size);
+    background-image:      
+        repeating-linear-gradient(#0002 0 0.25px, #0000 0 calc(100% / var(--c) - 0.5px), #0002 0 calc(100% / var(--c))),
+        repeating-linear-gradient(to right, #0002 0 0.25px, #0000 0 calc(100% / var(--c) - 0.5px), #0002 0 calc(100% / var(--c)));
+  }
+  
+  
+  .dot {
+    --translationUnit: 100% / var(--c);
+    --translationX: var(--translationUnit) * var(--cx);
+    --translationY: var(--translationUnit) * var(--cy);
+    width: calc(var(--dsize) * 1px);
+    height: calc(var(--dsize) * 1px);
+    background: var(--dcolor);
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: calc(var(--translationX) + var(--x) * var(--translationUnit));
+    top: calc(var(--translationY) + var(--y) * var(--translationUnit));
+  }
+  
+  /* Demo functions */
+  #axis_x-3 {
+    --size: 450px;
+  }
+  #axis_x-3 .dot {
+    /**
+     * f(x) = x - 3
+     *        x = var(--x)
+     */
+    --function: --x;
+  }
+  
