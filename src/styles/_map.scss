@@ -19,13 +19,19 @@
         position: absolute;
     }
     .field1-markup-box{
+        .axis{
+            top: -300%;
+            left: -300%;
+            z-index: 10;
+            background-image: none;
+        }
         top: 45%; 
         left: 45%;
         & img {
-            position: fixed;
-            top: 30%; 
-            left: 35%;
-            width: 300px;
+            position: absolute;
+            top: -250%;
+            left: -250%;
+            width: 283px;
             z-index: 0;
         }
         & p{

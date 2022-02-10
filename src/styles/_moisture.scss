@@ -14,11 +14,31 @@
 }
 
 .map-direct-view{
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(0,0,0,0.5);
     position: relative;
     width: 450px;
     img {
         height: 400px
+    }
+    .legende-drop1, .legende-drop2, .legende-drop3, .legende-drop4{
+        height: 19px; 
+        position: absolute; 
+        top: -3px
+    }
+    .legende-drop1{
+        left: 22px;
+    }
+
+    .legende-drop2{
+        left: 40px;
+    }
+
+    .legende-drop3{
+        left: 58px;
+    }
+
+    .legende-drop4{
+        left: 76px;
     }
 }
 
@@ -27,7 +47,7 @@
         width: 100px;
     }
     .row{
-        margin: 0 0 12% 0;
+        margin: 0 0 18% 0;
     }
     .no-rain{
         width: 140px;

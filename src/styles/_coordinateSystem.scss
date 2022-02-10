@@ -11,9 +11,9 @@
     --size: 100%;
     width: var(--size);
     height: var(--size);
-    background-image:      
-        repeating-linear-gradient(#0002 0 0.25px, #0000 0 calc(100% / var(--c) - 0.5px), #0002 0 calc(100% / var(--c))),
-        repeating-linear-gradient(to right, #0002 0 0.25px, #0000 0 calc(100% / var(--c) - 0.5px), #0002 0 calc(100% / var(--c)));
+    //background-image:      
+        //repeating-linear-gradient(#0002 0 0.25px, #0000 0 calc(100% / var(--c) - 0.5px), #0002 0 calc(100% / var(--c))),
+        //repeating-linear-gradient(to right, #0002 0 0.25px, #0000 0 calc(100% / var(--c) - 0.5px), #0002 0 calc(100% / var(--c)));
   }
   
   

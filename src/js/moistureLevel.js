@@ -1,11 +1,17 @@
-showMoistureLevel = function(xCoord, yCoord, color){
-    if (color === "#2e9800") {
+var dropCount = null;
+
+showMoistureLevel = function(xCoord, yCoord, color, dropCount){
+    if (color === "#7bccc4") {
         color = 'green'
         showGreenStatus();
-    } else if (color === "#fd7e14"){
+    } else if (color === "#ccebc5"){
         color = 'orange'
-        showOrangeStatus();
-    } else if (color === "#e6001e"){
+        if (dropCount === 4) {
+            showfourDrops();
+        } else {
+            showOrangeStatus();
+        }
+    } else if (color === "#fff"){
         color = 'red'
         showRedStatus();
     } else {
@@ -34,6 +40,11 @@ showGreenStatus = function(){
     level3.innerHTML=waterdrop+waterdrop
 }
 
+showfourDrops = function(){
+    level1.innerHTML=waterdrop+waterdrop
+    level2.innerHTML=waterdrop
+    level3.innerHTML=waterdrop
+}
 
 showOrangeStatus = function(){
     level1.innerHTML=waterdrop+waterdrop
