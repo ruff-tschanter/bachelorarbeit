@@ -57,3 +57,23 @@ showRedStatus = function(){
     level2.innerHTML=waterdrop
     level3.innerHTML=dry
 }
+
+
+
+window.onclick = e => {
+    dots = document.getElementsByClassName("dot");
+    for (var i = 0; i < dots.length; i++) {
+        dots[i].classList.remove('active');
+     }
+     
+    
+
+    eClassList = e.target.classList; 
+    if (eClassList.contains('dot')){
+        if (eClassList.contains('active')){
+            eClassList.remove('active');
+        } else{
+            eClassList.add('active');
+        }
+    }
+} 
