@@ -5,15 +5,15 @@ showMoistureLevel = function(xCoord, yCoord, color, dropCount){
         color = 'green'
         showGreenStatus();
     } else if (color === "#ccebc5"){
-        color = 'orange'
+        color = 'teal'
         if (dropCount === 4) {
             showfourDrops();
         } else {
-            showOrangeStatus();
+            showTealStatus();
         }
-    } else if (color === "#fff"){
-        color = 'red'
-        showRedStatus();
+    } else if (color === "#fffcbb"){
+        color = 'yellow'
+        showYellowStatus();
     } else {
         color = 'blue'
         showBlueStatus();
@@ -46,13 +46,13 @@ showfourDrops = function(){
     level3.innerHTML=waterdrop
 }
 
-showOrangeStatus = function(){
+showTealStatus = function(){
     level1.innerHTML=waterdrop+waterdrop
     level2.innerHTML=waterdrop+waterdrop
     level3.innerHTML=waterdrop
 }
 
-showRedStatus = function(){
+showYellowStatus = function(){
     level1.innerHTML=waterdrop
     level2.innerHTML=waterdrop
     level3.innerHTML=dry
