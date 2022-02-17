@@ -18,6 +18,7 @@ showMoistureLevel = function(xCoord, yCoord, color, dropCount){
         color = 'blue'
         showBlueStatus();
     }
+    drawLine(xCoord, yCoord);
     //console.log("x coord: "+xCoord+", y coord: "+yCoord+", color: "+color);
 }
 
@@ -76,4 +77,17 @@ window.onclick = e => {
             eClassList.add('active');
         }
     }
+} 
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    showMoistureLevel(3, 4.2, '#7bccc4')
+    drawLine(3, 4.2);
+});
+
+
+var origin = document.getElementById('kegel');  
+
+drawLine = function (xCoord, yCoord){
+    origin.setAttribute("points", "125,-15 "+xCoord*3+","+yCoord*3.1+" 125,54")
 } 

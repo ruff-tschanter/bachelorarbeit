@@ -47,13 +47,20 @@
 }
 
 .waterdrop-container{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    width: 500px;
+    height: 500px;
+    padding: 75px;
+    background-image: url('../images/moisture/soil-clipped.svg');
     & img {
-        width: 100px;
+        width: 70px;
     }
     .row{
-        margin: 0 0 18% 0;
+        margin: 0 0 10% 0;
     }
     .no-rain{
-        width: 140px;
+        width: 110px;
     }
 }

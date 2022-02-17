@@ -6,27 +6,43 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    .bg-black{
+        position: relative;
+        z-index: 200;
+    }
 }
 
 #map_root{
     height: 700px !important;
 }
 
-.sensor-overlay{
+.kegelContainer{
+    position: absolute;
+    top: 0;
+    left: 0%;
+    z-index: 50;
+
+}
+
+.waterdrop-container{
+    z-index: 100;
+}
+
+
+.axis{
+    top: -300%;
+    left: -300%;
+    z-index: 150;
+    background-image: none;
+}
 
     .field1-markup-box, .field2-markup-box{
         margin: auto;
         position: absolute;
     }
     .field1-markup-box{
-        .axis{
-            top: -300%;
-            left: -300%;
-            z-index: 10;
-            background-image: none;
-        }
-        top: 45%; 
-        left: 45%;
+        bottom: 80px; 
+        right: 80px;
         & img {
             position: absolute;
             top: -250%;
@@ -48,9 +64,9 @@
         background-color: black;
         padding: 15px 20px;
         color: white;
-        border-radius: 50%;
         font-size: 35px;
         font-weight: bold;
         text-decoration: none;
+        width: 80px;
+        height: 80px;
     }
-}

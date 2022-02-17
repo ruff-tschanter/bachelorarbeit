@@ -12,7 +12,7 @@ let mode = "development";
 let target = "web";
 
 /* MULTIPLE html pages */
-let htmlPageNames = ['map', 'moisture', 'weather'];
+let htmlPageNames = ['map', 'weather'];
 let multipleHtmlPlugins = htmlPageNames.map(name => {
   return new HtmlWebpackPlugin({
     template: `./src/templates/${name}.html`, // relative path to the HTML files
