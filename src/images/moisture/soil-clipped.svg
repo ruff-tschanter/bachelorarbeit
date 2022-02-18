@@ -3,24 +3,24 @@
 <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
 <style type="text/css">
-	.st0{clip-path:url(#SVGID_00000067928666572034029340000010256271951220588430_);}
+	.st0{clip-path:url(#SVGID_00000041995100287127839310000004117290247156096157_);}
 	.st1{fill:#603813;}
 	.st2{fill:#42210B;}
 	.st3{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:1.8082;stroke-miterlimit:10;}
 	.st4{fill:#321400;}
-	.st5{clip-path:url(#SVGID_00000083781886327424819270000003480510871238250916_);}
+	.st5{clip-path:url(#SVGID_00000121980208510553095710000009903850643588839305_);}
 	.st6{fill:#FFFFFF;}
 </style>
 <g>
 	<g>
 		<defs>
-			<circle id="SVGID_1_" cx="250" cy="250" r="250"/>
+			<circle id="SVGID_1_" cx="250" cy="250" r="249.5"/>
 		</defs>
-		<clipPath id="SVGID_00000158017085370715465440000014110638112638231478_">
+		<clipPath id="SVGID_00000143607544427398897620000002532879403610522780_">
 			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
 		</clipPath>
 		
-			<g id="Ebene_1_00000142147099179886634290000014429100024192191648_" style="clip-path:url(#SVGID_00000158017085370715465440000014110638112638231478_);">
+			<g id="Ebene_1_00000142147099179886634290000014429100024192191648_" style="clip-path:url(#SVGID_00000143607544427398897620000002532879403610522780_);">
 			<rect x="-218.5" y="-77" class="st1" width="937" height="257.3"/>
 			<g>
 				<rect x="-593" y="181.5" class="st2" width="1686.1" height="137.6"/>
@@ -33,12 +33,12 @@
 	</g>
 	<g>
 		<defs>
-			<circle id="SVGID_00000053540208161500178480000016883096304123036298_" cx="250" cy="250" r="250"/>
+			<circle id="SVGID_00000003093246409243507200000009854468113383905156_" cx="250" cy="250" r="250"/>
 		</defs>
-		<clipPath id="SVGID_00000084514508893328007470000013960329090475222919_">
-			<use xlink:href="#SVGID_00000053540208161500178480000016883096304123036298_"  style="overflow:visible;"/>
+		<clipPath id="SVGID_00000162325090958455371490000004688310204890417596_">
+			<use xlink:href="#SVGID_00000003093246409243507200000009854468113383905156_"  style="overflow:visible;"/>
 		</clipPath>
-		<g id="Isolationsmodus" style="clip-path:url(#SVGID_00000084514508893328007470000013960329090475222919_);">
+		<g id="Isolationsmodus" style="clip-path:url(#SVGID_00000162325090958455371490000004688310204890417596_);">
 			<g>
 				<g>
 					

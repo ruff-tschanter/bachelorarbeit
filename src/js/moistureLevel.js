@@ -18,7 +18,7 @@ showMoistureLevel = function(xCoord, yCoord, color, dropCount){
         color = 'blue'
         showBlueStatus();
     }
-    drawLine(xCoord, yCoord);
+    //drawLine(xCoord, yCoord);
     //console.log("x coord: "+xCoord+", y coord: "+yCoord+", color: "+color);
 }
 
@@ -62,7 +62,7 @@ showYellowStatus = function(){
 
 
 window.onclick = e => {
-    dots = document.getElementsByClassName("dot");
+    dots = document.getElementsByClassName("clickableDot");
     for (var i = 0; i < dots.length; i++) {
         dots[i].classList.remove('active');
      }
@@ -70,7 +70,7 @@ window.onclick = e => {
     
 
     eClassList = e.target.classList; 
-    if (eClassList.contains('dot')){
+    if (eClassList.contains('clickableDot')){
         if (eClassList.contains('active')){
             eClassList.remove('active');
         } else{
@@ -82,12 +82,35 @@ window.onclick = e => {
 
 document.addEventListener("DOMContentLoaded", function() {
     showMoistureLevel(3, 4.2, '#7bccc4')
-    drawLine(3, 4.2);
 });
 
 
 var origin = document.getElementById('kegel');  
 
 drawLine = function (xCoord, yCoord){
-    origin.setAttribute("points", "125,-15 "+xCoord*3+","+yCoord*3.1+" 125,54")
+    if (xCoord < 6.0) {
+        console.log("x smaller than 6");
+        if (yCoord < 6.0) {
+            console.log("y smaller than 6");
+            origin.setAttribute("points", "500,-30 "+(xCoord*3)+","+(yCoord*4.5)+" 500,140")
+        } else if (yCoord >= 6.0 && yCoord < 12.0) {
+            console.log("y between 6 and 12");
+            origin.setAttribute("points", "500,-30 "+(xCoord*2.5)+","+(yCoord*3.75)+" 500,140")
+        } else {
+            console.log("else");
+            origin.setAttribute("points", "500,-230 "+(xCoord*2)+","+(yCoord*3.3)+" 500,60")
+        }
+    }
+    else {
+        if (yCoord < 6.0) {
+            console.log("y smaller than 6");
+            origin.setAttribute("points", "500,-30 "+(xCoord*2.6)+","+(yCoord*6)+" 500,140")
+        } else if (yCoord >= 6.0 && yCoord < 12.0) {
+            console.log("y between 6 and 12");
+            origin.setAttribute("points", "500,-170 "+(xCoord*2.6)+","+(yCoord*3.6)+" 500,100")
+        } else {
+            console.log("else");
+            origin.setAttribute("points", "500,-240 "+(xCoord*2.5)+","+(yCoord*3.4)+" 500,20")
+        }
+    }
 } 
