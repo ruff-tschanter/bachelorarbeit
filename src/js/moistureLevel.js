@@ -81,7 +81,9 @@ window.onclick = e => {
 
 
 document.addEventListener("DOMContentLoaded", function() {
-    showMoistureLevel(3, 4.2, '#7bccc4')
+    if (document.title == "Map") {
+        showMoistureLevel(3, 4.2, '#7bccc4')
+    }
 });
 
 

@@ -1,11 +1,13 @@
 @use "variables";
 
+.h-80{
+    height: 80%
+}
 .map-window{
     width: 100%; 
     height: 100%; 
     margin: 0;
     background-image: url("../images/map/topo-map.svg");
-    background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     .bg-black{
@@ -107,8 +109,9 @@
 .map-direct-view{
     background-color: rgba(0,0,0,0.5);
     position: relative;
-    width: 450px;
     left: 10%;
+    margin-top: 20%;
+    width: 450px;
     .active{
         border: 5px solid #fff;
         padding: 7px
@@ -156,22 +159,17 @@
         width: 110px;
     }
 }
-
-@media (max-width: 768px) {
-    .map-direct-view{
-        margin-top: 20vh;
-    }
-    .waterdrop-container{
-        left: 25%;
-        top: 8%;
-    }
+.kegelContainer{
+    position: relative;
+    top: 10%;
+    left: 0%;
+    width: 500px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-image: url(../images/map/kegel.svg);
+    z-index: 50;
 }
 
-@media (max-width: 576px) {
-    .waterdrop-container{
-        left: -5%;
-    }
-}
 
 #magnGlassContainer{
     position: absolute;
@@ -181,22 +179,34 @@
     height: 500px;
 }
 
-.kegelContainer{
-    position: relative;
-    top: 5%;
-    left: 0%;
-    width: 500px;
-    height: 500px;
-    background-repeat: no-repeat;
-    background-image: url(../images/map/kegel.svg);
-}
 
-@media (max-width: 992px){
+@media (max-width: 992px) {
+    .map-direct-view{
+        position: absolute;
+        top: 70vh;
+        z-index: 30;
+    }
+    .waterdrop-container{
+        position: relative;
+        width: 70%;
+        left: 0;
+        top: 0;
+        background-repeat: no-repeat;
+    }
     .kegelContainer{
-        top: 35%;
-        left: 5%;
+        top: -45%;
+        left: 0%;
         width: 100%;
         height: 400px;
         transform: rotate(-90deg);
     }
+}
+@media (max-width: 768px) {
+    .waterdrop-container{
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+
 }
