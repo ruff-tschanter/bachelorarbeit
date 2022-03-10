@@ -1,17 +1,17 @@
 var dropCount = null;
 
 showMoistureLevel = function(xCoord, yCoord, color, dropCount){
-    if (color === "#7bccc4") {
+    if (color === "#36b9d0") {
         color = 'green'
         showGreenStatus();
-    } else if (color === "#ccebc5"){
+    } else if (color === "#86dc3d"){
         color = 'teal'
         if (dropCount === 4) {
             showfourDrops();
         } else {
             showTealStatus();
         }
-    } else if (color === "#fffcbb"){
+    } else if (color === "#ffff00"){
         color = 'yellow'
         showYellowStatus();
     } else {
@@ -82,7 +82,7 @@ window.onclick = e => {
 
 document.addEventListener("DOMContentLoaded", function() {
     if (document.title == "Map") {
-        showMoistureLevel(3, 4.2, '#7bccc4')
+        showMoistureLevel(3, 4.2, '#36b9d0')
     }
 });
 

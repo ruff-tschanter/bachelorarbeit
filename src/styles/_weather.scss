@@ -1,6 +1,6 @@
-
+@use "variables";
 .bg-yellow{
-    background-color: #fcca00;
+    background-color: variables.$green;
 
 .weather-sun-box{
     height: 70%;
@@ -22,6 +22,7 @@
         width: 250px    
     }
     .weather-next-day{
+        height: 54px;
         .forecast {
             width: 75px;
         }
