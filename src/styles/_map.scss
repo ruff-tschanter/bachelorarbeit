@@ -84,13 +84,13 @@
     .field1-markup, .field2-markup{
         background-color: white;
         color: #e6001e;
-        padding: 14px 19px;
+        padding: 4px 9px;
         border-radius: 50%;
         font-size: 35px;
         font-weight: bold;
         text-decoration: none;
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
     }
 
 
@@ -216,6 +216,11 @@
         transform: rotate(-90deg);
     }
 }
+
+.h-80{
+    height: 80%;
+}
+
 @media (max-width: 768px) {
     .waterdrop-container{
         width: 100%;
