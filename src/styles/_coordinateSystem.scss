@@ -29,6 +29,7 @@
     transform: translate(-50%, -50%);
     left: calc(var(--translationX) + var(--x) * var(--translationUnit));
     top: calc(var(--translationY) + var(--y) * var(--translationUnit));
+    border: 1px solid #000;
     &:hover{
       cursor: pointer;
     }

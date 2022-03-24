@@ -1,0 +1,18 @@
+.info-cistern,
+.info-watering{
+    display: none;
+}
+
+.cistern:hover + .info-cistern,
+.watering:hover + .info-watering{
+    display: block;
+    width: 150px;
+    position: relative;
+    border-radius: 3px;
+
+}
+
+.watering:hover + .info-watering{
+    width: 160px;
+
+}

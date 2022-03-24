@@ -1,8 +1,12 @@
 var fieldNumber = 1
 
+fields=document.getElementsByClassName('changeFieldNumber');
+
 changeFieldNumber = function() {
   fieldNumber++;
 
-  document.getElementsByClassName('changeFieldNumber')[0].innerHTML="F"+fieldNumber;
-  document.getElementsByClassName('changeFieldNumber')[1].innerHTML="F"+fieldNumber;
+  for (i = 0; i<fields.length; i++ ){
+    document.getElementsByClassName('changeFieldNumber')[i].innerHTML="F"+fieldNumber;
+  }
+  
 }
