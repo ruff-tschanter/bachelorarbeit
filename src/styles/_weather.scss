@@ -54,4 +54,24 @@
         }
     }
 }
+
+.pt-15{
+    padding-top: 15%;
+}
+
+
+.weather-container-height{
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .pt-15{
+        padding-top: 0;
+        margin-top: 0;;
+    }
+    .weather-container-height{
+        height: 70%;
+    }
+}
+
 }
